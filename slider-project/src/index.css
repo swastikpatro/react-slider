@@ -427,11 +427,16 @@ h4 {
 .slide-container {
   display: flex;
   /* height: 450px; */
-  min-height: 450px;
-  max-height: fit-content;
+  min-height: 480px;
   position: relative;
   /* comment below line */
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .slide-container {
+    min-height: 450px;
+  }
 }
 
 .slide {
