@@ -426,7 +426,9 @@ h4 {
 
 .slide-container {
   display: flex;
-  height: 450px;
+  /* height: 450px; */
+  min-height: 450px;
+  max-height: fit-content;
   position: relative;
   /* comment below line */
   overflow: hidden;
