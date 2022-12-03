@@ -427,8 +427,9 @@ h4 {
 .slide-container {
   display: flex;
   height: 450px;
-  overflow: hidden;
   position: relative;
+  /* comment below line */
+  overflow: hidden;
 }
 
 .slide {
@@ -441,18 +442,18 @@ h4 {
   transition: all 0.5s ease-in-out;
   opacity: 0;
   /* opacity: 1; */
-  transform: translateX(-210%);
+  transform: scale(0.7) translateX(-210%);
   border: 1px solid var(--primary-700);
 }
 
 .slide.active {
   opacity: 1;
   z-index: 2;
-  transform: translateX(0);
+  transform: scale(1) translateX(0);
 }
 .slide.next {
-  transform: translateX(100%);
+  transform: scale(0.25) translateX(260%);
 }
 .slide.prev {
-  transform: translateX(-100%);
+  transform: scale(0.25) translateX(-260%);
 }
